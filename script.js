@@ -4,7 +4,7 @@ document.getElementById("phoneForm").addEventListener("submit", async function(e
     let phoneNumber = document.getElementById("phone").value;
     let responseMessage = document.getElementById("responseMessage");
 
-    let proxyURL = "https://tabor-music-server.onrender.com"; // 🔹 Now sends data to your proxy
+    let proxyURL = "https://tabor-music-server.onrender.com/proxy"; // 🔹 Now sends data to your proxy
 
     try {
         let response = await fetch(proxyURL, {
@@ -27,12 +27,3 @@ document.getElementById("phoneForm").addEventListener("submit", async function(e
         responseMessage.style.color = "red";
     }
 });
-
-// ✅ Default route to prevent "Cannot GET /" error
-app.get("/", (req, res) => {
-    res.send("Server is running! ✅");
-});
-
-// ✅ Render requires a dynamic port
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
