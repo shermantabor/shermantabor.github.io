@@ -4,7 +4,7 @@ document.getElementById("phoneForm").addEventListener("submit", async function(e
     let phoneNumber = document.getElementById("phone").value;
     let responseMessage = document.getElementById("responseMessage");
 
-    let proxyURL = "http://localhost:3000/proxy"; // 🔹 Now sends data to your proxy
+    let proxyURL = "https://tabor-music-server.onrender.com"; // 🔹 Now sends data to your proxy
 
     try {
         let response = await fetch(proxyURL, {
