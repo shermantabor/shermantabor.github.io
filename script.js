@@ -27,3 +27,12 @@ document.getElementById("phoneForm").addEventListener("submit", async function(e
         responseMessage.style.color = "red";
     }
 });
+
+// ✅ Default route to prevent "Cannot GET /" error
+app.get("/", (req, res) => {
+    res.send("Server is running! ✅");
+});
+
+// ✅ Render requires a dynamic port
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
