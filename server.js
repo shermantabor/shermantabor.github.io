@@ -42,3 +42,7 @@ app.get("/", (req, res) => {
 // ✅ Use a dynamic port required by Render
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+
+app.get("/proxy", (req, res) => {
+    res.send("✅ The /proxy route exists but only accepts POST requests.");
+});
