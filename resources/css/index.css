@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bodoni;
+    font-weight: 100;
+}
+
+.spacer-large {
+    height: 80px;
+}
+
+.spacer-small {
+    height: 20px;
+}
+
+/* HOME PAGE STYLING */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    }
+
+.header img {
+    height: 50px;
+    width: 50px;
+    margin-left: 50px;
+    }
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    padding-top: 18px;
+    gap: 20px;
+    padding-right: 20px;
+    }
+    
+.nav ul li {
+    display: inline;
+    font-style: italic;
+    }
+    
+.nav ul li a {
+    text-decoration: none;
+    color: #654f40;
+    font-size: 18px;
+    transition: 0.3s;
+    }
+    
+.nav ul li a:hover {
+    color: #f4a261;
+    }
+
+body {
+    background-color: rgb(27, 22, 19);
+    color: white;
+    text-align: center;
+    padding: 100px 10px;
+    }
+
+#home-page {
+    background-image: url("../images/IMG_0687.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+h1 {
+    font-size: 50px;
+    font-style: italic;
+    }
+
+.banner h1 {
+    margin-top: 150px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 50px;
+    color: antiquewhite;
+    font-style: italic;
+    }
+
+.banner h2 {
+    margin-top: 0px;
+    padding-left: 50px;
+    margin-bottom: 120px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 20px;
+    color:beige;
+    font-style: italic;
+    }
+
+.banner h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+/* Social Media Icons */
+
+.social {
+    background-color: #654f40;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    z-index: 1000;
+    border-radius: 15px 0 0 15px;
+    transform: translateY(-50%);
+    width: 70px;
+    padding: 16px 0 16px 12px;
+}
+
+.social a {
+    display: flex;
+    width: 45px;
+    height: 45px;
+}
+
+.social-icon {
+    height: 40px;
+    width: 40px;
+    } 
+
+/* ALBUM PAGE STYLING */
+
+
+.albums {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    }
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 0px 100px 0px;
+    gap: 20px;
+    }
+
+.album img {
+    width: 320px;
+    height: 320px;
+    }
+
+.album ol {
+    text-align: left;
+    margin-left: 100px;
+    font-size: 18px;
+    font-style: italic;
+    width: 200px;
+    }
+
+.album li a {
+    text-decoration: none;
+    color: beige;
+    font-size: 18px;
+    transition: 0.2s;
+    }
+
+    .album li {
+    margin-bottom: 5px;
+    color: beige;
+    }
+
+.album ol li a:hover {
+    color: #654f40;
+    }
+
+.lyrics-block {
+    margin-bottom: 30px;
+    }
+
+.lyrics-block p{
+    font-style: italic;
+}
+
+#responseMessage {
+    color: beige;
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    margin-left: 50px;
+    }
+
+    /* Style the form */
+#phoneForm {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+/* Style the label */
+#phoneForm label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Style the input field */
+#phone {
+    font-family: bodoni;
+    width: 80%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-align: center;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Input focus effect */
+#phone:focus {
+    border-color: #FFD700;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+}
+
+/* Style the submit button */
+button {
+    font-family: bodoni;
+    width: 80%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #654f40;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #1b1613;
+    transform: scale(1.05);
+}
+
+/* Response message styling */
+#responseMessage {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+    .banner {
+        width: 90%;
+        padding: 30px;
+    }
+
+    #phone {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
