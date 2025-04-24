@@ -119,7 +119,7 @@ h3 {
     padding-left: 0px;
 }
 
-#listen-button {
+.homepage-button {
     margin-left: 50px;
     box-sizing: border-box;
 }
@@ -285,7 +285,7 @@ lyrics-block {
 }
 
 /* Style the submit button */
-button {
+.button {
     font-family: bodoni;
     width: 80%;
     max-width: 300px;
@@ -298,10 +298,11 @@ button {
     border-radius: 6px;
     cursor: pointer;
     transition: 0.3s ease;
+    text-decoration: none;
 }
 
 /* Button hover effect */
-button:hover {
+.button:hover {
     background: #1b1613;
     transform: scale(1.05);
 }
